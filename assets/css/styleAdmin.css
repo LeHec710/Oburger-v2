@@ -1,0 +1,387 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    --white: #D6D6DC;
+    --dark-white: #8E9195;
+    --dark-grey: #253749;
+    --lighter-grey: #374D5F;
+    --grey: #314355;
+    --green: #2BA199;
+    --dark-green: #267973;
+    margin: 0;
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'Raleway', sans-serif;
+    height: 100vh;
+    display: flex;
+    color: var(--dark-white);
+}
+
+/* topbar */
+
+.topbar {
+    width: 100%;
+    background-color: var(--grey);
+    position: fixed;
+    z-index: 10;
+}
+
+.topbar h1 {
+    color: var(--white);
+    padding: 1rem 0;
+    font-size: 1rem;
+    text-align: center;
+}
+
+/* Sidebar */
+
+.sidebar {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--grey);
+}
+
+
+.sidebar .nav {
+    width: 100%;
+    text-align: center;
+}
+
+.sidebar .nav ul {
+    list-style: none;
+}
+
+.sidebar .nav ul li {
+    transition: background-color 0.3s ease, color 0.3s ease, border-color 0.5s ease;
+    box-sizing: border-box;
+    width: 100%;
+    padding: 1rem;
+    cursor: pointer;
+    border-color: #2ba19900;
+    width: 52px;
+    position: relative;
+}
+
+.sidebar .nav ul li:hover {
+    background-color: var(--lighter-grey);
+    border-color: #2BA199;
+    border-right: 2px solid var(--green);
+    color: var(--white);
+}
+
+.sidebar .nav ul li.active {
+    color: var(--green);
+    border-right: 2px solid var(--green);
+}
+
+.sidebar .nav a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.sidebar .nav ul li.extendable ul {
+    z-index: 2;
+    position: absolute;
+    top: 0;
+    left: 52px;
+    width: 200px;
+    color: var(--grey);
+    background-color: var(--green);
+    transition: all 0.3s ease;
+    overflow: hidden;
+    white-space:nowrap;
+}
+
+.sidebar .nav ul li.extendable ul.hidden {
+    width: 0;
+    pointer-events: none;
+    overflow: hidden;
+}
+
+.sidebar .nav ul li.extendable ul li {
+    width: 100%;
+    color: var(--grey);
+}
+
+.sidebar .nav ul li.extendable ul li:hover {
+    border: none;
+    background-color: var(--green);
+    color: var(--white);
+}
+
+
+/* popups */
+.popup-container {
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.6);
+    z-index: 200;
+    transition: opacity 0.4s ease;
+}
+
+.popup-container.hidden {
+    opacity: 0;
+    pointer-events: none;
+}
+
+.popup {
+    background-color: var(--white);
+    border-radius: 5px;
+    padding: 2rem;
+    padding-right: 3rem;
+    position: relative;
+    display: flex;
+}
+
+.popup .close {
+    position: absolute;
+    top: 1rem;
+    right: 1.2rem;
+    transition: color 0.3s ease;
+    cursor: pointer;
+}
+
+.popup .close:hover {
+    color: var(--dark-grey);
+}
+
+.popup input[type="submit"] {
+    padding: 0.8rem 1.2rem;
+    width: 20%;
+    display: block;
+    margin: 0 auto;
+    margin-top: 1rem;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    background-color: var(--green);
+    color: var(--white);
+    transition: all 0.3s ease;
+}
+
+.popup input[type="submit"]:hover {
+    background-color: var(--dark-green);
+}
+
+
+/* Content */
+.content {
+    float: right;
+    width: 100%;
+    height: 100%;
+    background-color: var(--dark-grey);
+    overflow: scroll;
+}
+
+.content .container {    
+    margin: 0 auto;
+    width: 80%;
+    padding: 2rem 0;
+    padding-top: 5rem;
+}
+
+/* table */
+.content .table {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.content .row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 1rem 3rem;
+}
+
+.content .row.selectors {
+    margin: 0.7rem 0;
+    cursor: pointer;
+}
+
+.content .row.element {
+    margin-bottom: 1rem;
+    background-color: var(--lighter-grey);
+    border-radius: 5px;
+    transition: opacity 0.4s ease;
+    transition-delay: 2s;
+}
+
+.content .row.element li.action i {
+    padding: 0 0.5rem;
+}
+
+.content .row.element li.action i:hover {
+    color: var(--white);
+    transition: all 0.5s ease;
+    cursor: pointer;
+}
+
+.content .row.element input[type="text"], .content .row.element input[type="number"], .content .row.element label.input {
+    font-family: inherit;
+    padding: 0.4rem;
+    background: transparent;
+    border: 1px solid var(--green);
+    color: white;
+    outline: none;
+    border-radius: 3px;
+    transition: all 0.3s ease;
+}
+.content .row.element input[type="text"]:hover,
+.content .row.element input[type="number"]:hover,
+.content .row.element label.input:hover,
+.content .row.element input[type="text"]:focus,
+.content .row.element input[type="number"]:focus,
+.content .row.element label.input:focus {
+    background-color: var(--green);
+}
+
+.content .row.element.hidden {
+    display: none;
+    opacity: 0;
+    pointer-events: none;
+}
+
+.content .row ul {
+    list-style: none;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.content .row ul li {
+    flex: 1 1 16%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.content .row img {
+    object-fit: cover;
+    width: 50px;
+    height: 50px;
+}
+
+/* searchbar */
+.content .searchbar {
+    position: relative;
+}
+
+.content .searchbar input[type="text"] {
+    width: 40%;
+    padding: 1rem 1.5rem;
+    padding-left: 3.7rem;
+    border-radius: 50px;
+    border: 1px solid var(--dark-white);
+    background: transparent;
+    font-family: inherit;
+    transition: all 0.3s ease;
+    color: var(--white);
+    outline: none;
+}
+
+.content .searchbar input[type="text"]:hover  {
+    border-color: var(--white);
+}
+.content .searchbar input[type="text"]:focus {
+    border-color: var(--green);
+}
+
+.content .searchbar input[type="text"]::placeholder { color: var(--dark-white); }
+.content .searchbar input[type="text"]::-moz-placeholder { color: var(--dark-white); }
+.content .searchbar input[type="text"]::-webkit-input-placeholder { color: var(--dark-white); }
+
+.content .searchbar button {
+    transition: all 0.3s ease;
+    position: absolute;
+    left: 1.6rem;
+    top: 0.8rem;
+    border: none;
+    background: transparent;
+    font-size: 1.3rem;
+    color: var(--dark-white);
+}
+
+/* forms */
+
+.form-container {
+    width: 60%;
+    margin: 0 auto;
+}
+
+.form-container .form-title {
+    margin-bottom: 2rem;
+    letter-spacing: 2px;
+}
+
+.form-container .form-title h1 {
+    color: var(--green);
+    margin-bottom: 0.5rem;
+}
+
+.form-container .form-title p {
+    color: var(--white);
+    font-size: 0.8rem;
+}
+
+.form-container input:not([type='submit']), textarea {
+    margin-top: 0.5rem;
+    outline: none;
+    padding: 0.5rem 1rem;
+    color: var(--white);
+    width: 100%;
+    font-family: inherit;
+    background: transparent;
+    border-radius: 5000px;
+    border: 1px solid var(--white);
+    transition: all 0.3s ease;
+}
+
+.form-container textarea {
+    min-width: 100%;
+    max-height: 10rem;
+    padding: 1rem 3rem;
+}
+
+.form-container input[type="submit"],
+.form-container button[type="submit"] {
+    padding: 0.8rem 1rem;
+    width: 40%;
+    border: none;
+    background: var(--green);
+    transition: all 0.5s ease;
+    color: var(--white);
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.form-container input[type="submit"]:hover,
+.form-container button[type="submit"]:hover {
+    background-color: var(--dark-green);
+}
+
+.form-container textarea::-webkit-scrollbar-corner {
+    color: transparent;
+    background: transparent;
+    visibility: hidden;
+    opacity: 0;
+}
+
+.form-container input:not([type='submit']):hover,
+.form-container input:not([type='submit']):focus,
+.form-container textarea:hover,
+.form-container textarea:focus {
+    border: 1px solid var(--green);
+}

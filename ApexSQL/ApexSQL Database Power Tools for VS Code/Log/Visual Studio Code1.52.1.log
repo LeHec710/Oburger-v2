@@ -1,0 +1,364 @@
+2021-02-04 11:38:24.495 5702  -1     INFO  [VSCPWRTOOLS: 2020.7.51.0]: OS version: Darwin 19.6.0 Darwin Kernel Version 19.6.0: Tue Nov 10 00:10:30 PST 2020; root:xnu-6153.141.10~1/RELEASE_X86_64
+2021-02-04 11:38:24.498 5702  -1     INFO  [VSCPWRTOOLS: 2020.7.51.0]: Host application: Visual Studio Code(1.52.1)
+2021-02-04 11:38:24.500 5702  -1     INFO  [VSCPWRTOOLS: 2020.7.51.0]: Initializing addin: ApexSQL Database Power Tools for VS Code 2020.7.51.0
+2021-02-04 11:40:22.263 5702  -1     ERROR [VSCPWRTOOLS: 2020.7.51.0]: An exception occurred
+Unable to connect to any of the specified MySQL hosts.
+Type: MySqlConnector.MySqlException
+	Stack trace
+	   at MySqlConnector.Core.ServerSession.ConnectAsync(ConnectionSettings cs, Int32 startTickCount, ILoadBalancer loadBalancer, IOBehavior ioBehavior, CancellationToken cancellationToken) in /_/src/MySqlConnector/Core/ServerSession.cs:line 474
+	   at MySqlConnector.Core.ConnectionPool.GetSessionAsync(MySqlConnection connection, Int32 startTickCount, IOBehavior ioBehavior, CancellationToken cancellationToken) in /_/src/MySqlConnector/Core/ConnectionPool.cs:line 111
+	   at MySqlConnector.Core.ConnectionPool.GetSessionAsync(MySqlConnection connection, Int32 startTickCount, IOBehavior ioBehavior, CancellationToken cancellationToken) in /_/src/MySqlConnector/Core/ConnectionPool.cs:line 140
+	   at MySqlConnector.MySqlConnection.CreateSessionAsync(ConnectionPool pool, Int32 startTickCount, Nullable`1 ioBehavior, CancellationToken cancellationToken) in /_/src/MySqlConnector/MySqlConnection.cs:line 821
+	   at MySqlConnector.MySqlConnection.OpenAsync(Nullable`1 ioBehavior, CancellationToken cancellationToken) in /_/src/MySqlConnector/MySqlConnection.cs:line 399
+	   at MySqlConnector.MySqlConnection.Open() in /_/src/MySqlConnector/MySqlConnection.cs:line 365
+	   at ApexSQL.VSC.Core.MySqlServerConnection.Open() in E:\Agent\_work\331\s\Projects\ApexSQL.VSC.Common\Classes\MySqlServerConnection.cs:line 210
+	   at ApexSQL.VSC.Core.Connections.Connect(ConnectionInfo connectionInfo) in E:\Agent\_work\331\s\Projects\ApexSQL.VSC.Common\Classes\Connections.cs:line 130
+
+2021-02-04 11:40:28.470 5702  -1     ERROR [VSCPWRTOOLS: 2020.7.51.0]: An exception occurred
+Unable to connect to any of the specified MySQL hosts.
+Type: MySqlConnector.MySqlException
+	Stack trace
+	   at MySqlConnector.Core.ServerSession.ConnectAsync(ConnectionSettings cs, Int32 startTickCount, ILoadBalancer loadBalancer, IOBehavior ioBehavior, CancellationToken cancellationToken) in /_/src/MySqlConnector/Core/ServerSession.cs:line 474
+	   at MySqlConnector.Core.ConnectionPool.GetSessionAsync(MySqlConnection connection, Int32 startTickCount, IOBehavior ioBehavior, CancellationToken cancellationToken) in /_/src/MySqlConnector/Core/ConnectionPool.cs:line 111
+	   at MySqlConnector.Core.ConnectionPool.GetSessionAsync(MySqlConnection connection, Int32 startTickCount, IOBehavior ioBehavior, CancellationToken cancellationToken) in /_/src/MySqlConnector/Core/ConnectionPool.cs:line 140
+	   at MySqlConnector.MySqlConnection.CreateSessionAsync(ConnectionPool pool, Int32 startTickCount, Nullable`1 ioBehavior, CancellationToken cancellationToken) in /_/src/MySqlConnector/MySqlConnection.cs:line 821
+	   at MySqlConnector.MySqlConnection.OpenAsync(Nullable`1 ioBehavior, CancellationToken cancellationToken) in /_/src/MySqlConnector/MySqlConnection.cs:line 399
+	   at MySqlConnector.MySqlConnection.Open() in /_/src/MySqlConnector/MySqlConnection.cs:line 365
+	   at ApexSQL.VSC.Core.MySqlServerConnection.Open() in E:\Agent\_work\331\s\Projects\ApexSQL.VSC.Common\Classes\MySqlServerConnection.cs:line 210
+	   at ApexSQL.VSC.Core.Connections.Connect(ConnectionInfo connectionInfo) in E:\Agent\_work\331\s\Projects\ApexSQL.VSC.Common\Classes\Connections.cs:line 130
+
+2021-02-04 11:40:47.709 5702  -1     ERROR [VSCPWRTOOLS: 2020.7.51.0]: An exception occurred
+Unable to connect to any of the specified MySQL hosts.
+Type: MySqlConnector.MySqlException
+	Stack trace
+	   at MySqlConnector.Core.ServerSession.ConnectAsync(ConnectionSettings cs, Int32 startTickCount, ILoadBalancer loadBalancer, IOBehavior ioBehavior, CancellationToken cancellationToken) in /_/src/MySqlConnector/Core/ServerSession.cs:line 474
+	   at MySqlConnector.Core.ConnectionPool.GetSessionAsync(MySqlConnection connection, Int32 startTickCount, IOBehavior ioBehavior, CancellationToken cancellationToken) in /_/src/MySqlConnector/Core/ConnectionPool.cs:line 111
+	   at MySqlConnector.Core.ConnectionPool.GetSessionAsync(MySqlConnection connection, Int32 startTickCount, IOBehavior ioBehavior, CancellationToken cancellationToken) in /_/src/MySqlConnector/Core/ConnectionPool.cs:line 140
+	   at MySqlConnector.MySqlConnection.CreateSessionAsync(ConnectionPool pool, Int32 startTickCount, Nullable`1 ioBehavior, CancellationToken cancellationToken) in /_/src/MySqlConnector/MySqlConnection.cs:line 821
+	   at MySqlConnector.MySqlConnection.OpenAsync(Nullable`1 ioBehavior, CancellationToken cancellationToken) in /_/src/MySqlConnector/MySqlConnection.cs:line 399
+	   at MySqlConnector.MySqlConnection.Open() in /_/src/MySqlConnector/MySqlConnection.cs:line 365
+	   at ApexSQL.VSC.Core.MySqlServerConnection.Open() in E:\Agent\_work\331\s\Projects\ApexSQL.VSC.Common\Classes\MySqlServerConnection.cs:line 210
+	   at ApexSQL.VSC.Core.Connections.Connect(ConnectionInfo connectionInfo) in E:\Agent\_work\331\s\Projects\ApexSQL.VSC.Common\Classes\Connections.cs:line 130
+
+2021-02-04 11:41:24.905 5702  -1     ERROR [VSCPWRTOOLS: 2020.7.51.0]: An exception occurred
+Unable to connect to any of the specified MySQL hosts.
+Type: MySqlConnector.MySqlException
+	Stack trace
+	   at MySqlConnector.Core.ServerSession.ConnectAsync(ConnectionSettings cs, Int32 startTickCount, ILoadBalancer loadBalancer, IOBehavior ioBehavior, CancellationToken cancellationToken) in /_/src/MySqlConnector/Core/ServerSession.cs:line 474
+	   at MySqlConnector.Core.ConnectionPool.GetSessionAsync(MySqlConnection connection, Int32 startTickCount, IOBehavior ioBehavior, CancellationToken cancellationToken) in /_/src/MySqlConnector/Core/ConnectionPool.cs:line 111
+	   at MySqlConnector.Core.ConnectionPool.GetSessionAsync(MySqlConnection connection, Int32 startTickCount, IOBehavior ioBehavior, CancellationToken cancellationToken) in /_/src/MySqlConnector/Core/ConnectionPool.cs:line 140
+	   at MySqlConnector.MySqlConnection.CreateSessionAsync(ConnectionPool pool, Int32 startTickCount, Nullable`1 ioBehavior, CancellationToken cancellationToken) in /_/src/MySqlConnector/MySqlConnection.cs:line 821
+	   at MySqlConnector.MySqlConnection.OpenAsync(Nullable`1 ioBehavior, CancellationToken cancellationToken) in /_/src/MySqlConnector/MySqlConnection.cs:line 399
+	   at MySqlConnector.MySqlConnection.Open() in /_/src/MySqlConnector/MySqlConnection.cs:line 365
+	   at ApexSQL.VSC.Core.MySqlServerConnection.Open() in E:\Agent\_work\331\s\Projects\ApexSQL.VSC.Common\Classes\MySqlServerConnection.cs:line 210
+	   at ApexSQL.VSC.Core.Connections.Connect(ConnectionInfo connectionInfo) in E:\Agent\_work\331\s\Projects\ApexSQL.VSC.Common\Classes\Connections.cs:line 130
+
+2021-02-04 11:41:35.659 5702  -1     ERROR [VSCPWRTOOLS: 2020.7.51.0]: An exception occurred
+Unable to connect to any of the specified MySQL hosts.
+Type: MySqlConnector.MySqlException
+	Stack trace
+	   at MySqlConnector.Core.ServerSession.ConnectAsync(ConnectionSettings cs, Int32 startTickCount, ILoadBalancer loadBalancer, IOBehavior ioBehavior, CancellationToken cancellationToken) in /_/src/MySqlConnector/Core/ServerSession.cs:line 474
+	   at MySqlConnector.Core.ConnectionPool.GetSessionAsync(MySqlConnection connection, Int32 startTickCount, IOBehavior ioBehavior, CancellationToken cancellationToken) in /_/src/MySqlConnector/Core/ConnectionPool.cs:line 111
+	   at MySqlConnector.Core.ConnectionPool.GetSessionAsync(MySqlConnection connection, Int32 startTickCount, IOBehavior ioBehavior, CancellationToken cancellationToken) in /_/src/MySqlConnector/Core/ConnectionPool.cs:line 140
+	   at MySqlConnector.MySqlConnection.CreateSessionAsync(ConnectionPool pool, Int32 startTickCount, Nullable`1 ioBehavior, CancellationToken cancellationToken) in /_/src/MySqlConnector/MySqlConnection.cs:line 821
+	   at MySqlConnector.MySqlConnection.OpenAsync(Nullable`1 ioBehavior, CancellationToken cancellationToken) in /_/src/MySqlConnector/MySqlConnection.cs:line 399
+	   at MySqlConnector.MySqlConnection.Open() in /_/src/MySqlConnector/MySqlConnection.cs:line 365
+	   at ApexSQL.VSC.Core.MySqlServerConnection.Open() in E:\Agent\_work\331\s\Projects\ApexSQL.VSC.Common\Classes\MySqlServerConnection.cs:line 210
+	   at ApexSQL.VSC.Core.Connections.Connect(ConnectionInfo connectionInfo) in E:\Agent\_work\331\s\Projects\ApexSQL.VSC.Common\Classes\Connections.cs:line 130
+
+2021-02-04 11:42:11.390 5702  -1     ERROR [VSCPWRTOOLS: 2020.7.51.0]: An exception occurred
+Unable to connect to any of the specified MySQL hosts.
+Type: MySqlConnector.MySqlException
+	Stack trace
+	   at MySqlConnector.Core.ServerSession.ConnectAsync(ConnectionSettings cs, Int32 startTickCount, ILoadBalancer loadBalancer, IOBehavior ioBehavior, CancellationToken cancellationToken) in /_/src/MySqlConnector/Core/ServerSession.cs:line 474
+	   at MySqlConnector.Core.ConnectionPool.GetSessionAsync(MySqlConnection connection, Int32 startTickCount, IOBehavior ioBehavior, CancellationToken cancellationToken) in /_/src/MySqlConnector/Core/ConnectionPool.cs:line 111
+	   at MySqlConnector.Core.ConnectionPool.GetSessionAsync(MySqlConnection connection, Int32 startTickCount, IOBehavior ioBehavior, CancellationToken cancellationToken) in /_/src/MySqlConnector/Core/ConnectionPool.cs:line 140
+	   at MySqlConnector.MySqlConnection.CreateSessionAsync(ConnectionPool pool, Int32 startTickCount, Nullable`1 ioBehavior, CancellationToken cancellationToken) in /_/src/MySqlConnector/MySqlConnection.cs:line 821
+	   at MySqlConnector.MySqlConnection.OpenAsync(Nullable`1 ioBehavior, CancellationToken cancellationToken) in /_/src/MySqlConnector/MySqlConnection.cs:line 399
+	   at MySqlConnector.MySqlConnection.Open() in /_/src/MySqlConnector/MySqlConnection.cs:line 365
+	   at ApexSQL.VSC.Core.MySqlServerConnection.Open() in E:\Agent\_work\331\s\Projects\ApexSQL.VSC.Common\Classes\MySqlServerConnection.cs:line 210
+	   at ApexSQL.VSC.Core.Connections.Connect(ConnectionInfo connectionInfo) in E:\Agent\_work\331\s\Projects\ApexSQL.VSC.Common\Classes\Connections.cs:line 130
+
+2021-02-04 11:42:12.862 5702  -1     ERROR [VSCPWRTOOLS: 2020.7.51.0]: An exception occurred
+Unable to connect to any of the specified MySQL hosts.
+Type: MySqlConnector.MySqlException
+	Stack trace
+	   at MySqlConnector.Core.ServerSession.ConnectAsync(ConnectionSettings cs, Int32 startTickCount, ILoadBalancer loadBalancer, IOBehavior ioBehavior, CancellationToken cancellationToken) in /_/src/MySqlConnector/Core/ServerSession.cs:line 474
+	   at MySqlConnector.Core.ConnectionPool.GetSessionAsync(MySqlConnection connection, Int32 startTickCount, IOBehavior ioBehavior, CancellationToken cancellationToken) in /_/src/MySqlConnector/Core/ConnectionPool.cs:line 111
+	   at MySqlConnector.Core.ConnectionPool.GetSessionAsync(MySqlConnection connection, Int32 startTickCount, IOBehavior ioBehavior, CancellationToken cancellationToken) in /_/src/MySqlConnector/Core/ConnectionPool.cs:line 140
+	   at MySqlConnector.MySqlConnection.CreateSessionAsync(ConnectionPool pool, Int32 startTickCount, Nullable`1 ioBehavior, CancellationToken cancellationToken) in /_/src/MySqlConnector/MySqlConnection.cs:line 821
+	   at MySqlConnector.MySqlConnection.OpenAsync(Nullable`1 ioBehavior, CancellationToken cancellationToken) in /_/src/MySqlConnector/MySqlConnection.cs:line 399
+	   at MySqlConnector.MySqlConnection.Open() in /_/src/MySqlConnector/MySqlConnection.cs:line 365
+	   at ApexSQL.VSC.Core.MySqlServerConnection.Open() in E:\Agent\_work\331\s\Projects\ApexSQL.VSC.Common\Classes\MySqlServerConnection.cs:line 210
+	   at ApexSQL.VSC.Core.Connections.Connect(ConnectionInfo connectionInfo) in E:\Agent\_work\331\s\Projects\ApexSQL.VSC.Common\Classes\Connections.cs:line 130
+
+2021-02-04 11:43:54.052 5702  -1     ERROR [VSCPWRTOOLS: 2020.7.51.0]: An exception occurred
+Connection refused
+Type: System.Net.Sockets.SocketException
+	Stack trace
+	   at Renci.SshNet.Abstractions.SocketAbstraction.Connect(IPEndPoint remoteEndpoint, TimeSpan connectTimeout)
+	   at Renci.SshNet.Session.SocketConnect(String host, Int32 port)
+	   at Renci.SshNet.Session.Connect()
+	   at Renci.SshNet.BaseClient.Connect()
+	   at ApexSQL.VSC.Core.MySqlServerConnection.ConnectToSSH() in E:\Agent\_work\331\s\Projects\ApexSQL.VSC.Common\Classes\MySqlServerConnection.cs:line 253
+	   at ApexSQL.VSC.Core.MySqlServerConnection..ctor(ConnectionInfo connectionInfo, String database) in E:\Agent\_work\331\s\Projects\ApexSQL.VSC.Common\Classes\MySqlServerConnection.cs:line 40
+	   at ApexSQL.VSC.Core.ServerConnection.CreateInstance(ConnectionInfo connectionInfo, String database) in E:\Agent\_work\331\s\Projects\ApexSQL.VSC.Common\Classes\ServerConnection.cs:line 35
+	   at ApexSQL.VSC.Core.Connections.Connect(ConnectionInfo connectionInfo) in E:\Agent\_work\331\s\Projects\ApexSQL.VSC.Common\Classes\Connections.cs:line 127
+
+2021-02-04 11:43:59.411 5702  -1     ERROR [VSCPWRTOOLS: 2020.7.51.0]: An exception occurred
+Connection refused
+Type: System.Net.Sockets.SocketException
+	Stack trace
+	   at Renci.SshNet.Abstractions.SocketAbstraction.Connect(IPEndPoint remoteEndpoint, TimeSpan connectTimeout)
+	   at Renci.SshNet.Session.SocketConnect(String host, Int32 port)
+	   at Renci.SshNet.Session.Connect()
+	   at Renci.SshNet.BaseClient.Connect()
+	   at ApexSQL.VSC.Core.MySqlServerConnection.ConnectToSSH() in E:\Agent\_work\331\s\Projects\ApexSQL.VSC.Common\Classes\MySqlServerConnection.cs:line 253
+	   at ApexSQL.VSC.Core.MySqlServerConnection..ctor(ConnectionInfo connectionInfo, String database) in E:\Agent\_work\331\s\Projects\ApexSQL.VSC.Common\Classes\MySqlServerConnection.cs:line 40
+	   at ApexSQL.VSC.Core.ServerConnection.CreateInstance(ConnectionInfo connectionInfo, String database) in E:\Agent\_work\331\s\Projects\ApexSQL.VSC.Common\Classes\ServerConnection.cs:line 35
+	   at ApexSQL.VSC.Core.Connections.Connect(ConnectionInfo connectionInfo) in E:\Agent\_work\331\s\Projects\ApexSQL.VSC.Common\Classes\Connections.cs:line 127
+
+2021-02-04 11:44:04.111 5702  -1     ERROR [VSCPWRTOOLS: 2020.7.51.0]: An exception occurred
+Connection refused
+Type: System.Net.Sockets.SocketException
+	Stack trace
+	   at Renci.SshNet.Abstractions.SocketAbstraction.Connect(IPEndPoint remoteEndpoint, TimeSpan connectTimeout)
+	   at Renci.SshNet.Session.SocketConnect(String host, Int32 port)
+	   at Renci.SshNet.Session.Connect()
+	   at Renci.SshNet.BaseClient.Connect()
+	   at ApexSQL.VSC.Core.MySqlServerConnection.ConnectToSSH() in E:\Agent\_work\331\s\Projects\ApexSQL.VSC.Common\Classes\MySqlServerConnection.cs:line 253
+	   at ApexSQL.VSC.Core.MySqlServerConnection..ctor(ConnectionInfo connectionInfo, String database) in E:\Agent\_work\331\s\Projects\ApexSQL.VSC.Common\Classes\MySqlServerConnection.cs:line 40
+	   at ApexSQL.VSC.Core.ServerConnection.CreateInstance(ConnectionInfo connectionInfo, String database) in E:\Agent\_work\331\s\Projects\ApexSQL.VSC.Common\Classes\ServerConnection.cs:line 35
+	   at ApexSQL.VSC.Core.Connections.Connect(ConnectionInfo connectionInfo) in E:\Agent\_work\331\s\Projects\ApexSQL.VSC.Common\Classes\Connections.cs:line 127
+
+2021-02-04 11:44:08.493 5702  -1     ERROR [VSCPWRTOOLS: 2020.7.51.0]: An exception occurred
+Connection refused
+Type: System.Net.Sockets.SocketException
+	Stack trace
+	   at Renci.SshNet.Abstractions.SocketAbstraction.Connect(IPEndPoint remoteEndpoint, TimeSpan connectTimeout)
+	   at Renci.SshNet.Session.SocketConnect(String host, Int32 port)
+	   at Renci.SshNet.Session.Connect()
+	   at Renci.SshNet.BaseClient.Connect()
+	   at ApexSQL.VSC.Core.MySqlServerConnection.ConnectToSSH() in E:\Agent\_work\331\s\Projects\ApexSQL.VSC.Common\Classes\MySqlServerConnection.cs:line 253
+	   at ApexSQL.VSC.Core.MySqlServerConnection..ctor(ConnectionInfo connectionInfo, String database) in E:\Agent\_work\331\s\Projects\ApexSQL.VSC.Common\Classes\MySqlServerConnection.cs:line 40
+	   at ApexSQL.VSC.Core.ServerConnection.CreateInstance(ConnectionInfo connectionInfo, String database) in E:\Agent\_work\331\s\Projects\ApexSQL.VSC.Common\Classes\ServerConnection.cs:line 35
+	   at ApexSQL.VSC.Core.Connections.Connect(ConnectionInfo connectionInfo) in E:\Agent\_work\331\s\Projects\ApexSQL.VSC.Common\Classes\Connections.cs:line 127
+
+2021-02-04 11:44:09.259 5702  -1     ERROR [VSCPWRTOOLS: 2020.7.51.0]: An exception occurred
+Connection refused
+Type: System.Net.Sockets.SocketException
+	Stack trace
+	   at Renci.SshNet.Abstractions.SocketAbstraction.Connect(IPEndPoint remoteEndpoint, TimeSpan connectTimeout)
+	   at Renci.SshNet.Session.SocketConnect(String host, Int32 port)
+	   at Renci.SshNet.Session.Connect()
+	   at Renci.SshNet.BaseClient.Connect()
+	   at ApexSQL.VSC.Core.MySqlServerConnection.ConnectToSSH() in E:\Agent\_work\331\s\Projects\ApexSQL.VSC.Common\Classes\MySqlServerConnection.cs:line 253
+	   at ApexSQL.VSC.Core.MySqlServerConnection..ctor(ConnectionInfo connectionInfo, String database) in E:\Agent\_work\331\s\Projects\ApexSQL.VSC.Common\Classes\MySqlServerConnection.cs:line 40
+	   at ApexSQL.VSC.Core.ServerConnection.CreateInstance(ConnectionInfo connectionInfo, String database) in E:\Agent\_work\331\s\Projects\ApexSQL.VSC.Common\Classes\ServerConnection.cs:line 35
+	   at ApexSQL.VSC.Core.Connections.Connect(ConnectionInfo connectionInfo) in E:\Agent\_work\331\s\Projects\ApexSQL.VSC.Common\Classes\Connections.cs:line 127
+
+2021-02-04 11:44:24.904 5702  -1     ERROR [VSCPWRTOOLS: 2020.7.51.0]: An exception occurred
+Connection refused
+Type: System.Net.Sockets.SocketException
+	Stack trace
+	   at Renci.SshNet.Abstractions.SocketAbstraction.Connect(IPEndPoint remoteEndpoint, TimeSpan connectTimeout)
+	   at Renci.SshNet.Session.SocketConnect(String host, Int32 port)
+	   at Renci.SshNet.Session.Connect()
+	   at Renci.SshNet.BaseClient.Connect()
+	   at ApexSQL.VSC.Core.MySqlServerConnection.ConnectToSSH() in E:\Agent\_work\331\s\Projects\ApexSQL.VSC.Common\Classes\MySqlServerConnection.cs:line 253
+	   at ApexSQL.VSC.Core.MySqlServerConnection..ctor(ConnectionInfo connectionInfo, String database) in E:\Agent\_work\331\s\Projects\ApexSQL.VSC.Common\Classes\MySqlServerConnection.cs:line 40
+	   at ApexSQL.VSC.Core.ServerConnection.CreateInstance(ConnectionInfo connectionInfo, String database) in E:\Agent\_work\331\s\Projects\ApexSQL.VSC.Common\Classes\ServerConnection.cs:line 35
+	   at ApexSQL.VSC.Core.Connections.Connect(ConnectionInfo connectionInfo) in E:\Agent\_work\331\s\Projects\ApexSQL.VSC.Common\Classes\Connections.cs:line 127
+
+2021-02-04 11:48:18.320 5702  -1     ERROR [VSCPWRTOOLS: 2020.7.51.0]: An exception occurred
+Connection refused
+Type: System.Net.Sockets.SocketException
+	Stack trace
+	   at Renci.SshNet.Abstractions.SocketAbstraction.Connect(IPEndPoint remoteEndpoint, TimeSpan connectTimeout)
+	   at Renci.SshNet.Session.SocketConnect(String host, Int32 port)
+	   at Renci.SshNet.Session.Connect()
+	   at Renci.SshNet.BaseClient.Connect()
+	   at ApexSQL.VSC.Core.MySqlServerConnection.ConnectToSSH() in E:\Agent\_work\331\s\Projects\ApexSQL.VSC.Common\Classes\MySqlServerConnection.cs:line 253
+	   at ApexSQL.VSC.Core.MySqlServerConnection..ctor(ConnectionInfo connectionInfo, String database) in E:\Agent\_work\331\s\Projects\ApexSQL.VSC.Common\Classes\MySqlServerConnection.cs:line 40
+	   at ApexSQL.VSC.Core.ServerConnection.CreateInstance(ConnectionInfo connectionInfo, String database) in E:\Agent\_work\331\s\Projects\ApexSQL.VSC.Common\Classes\ServerConnection.cs:line 35
+	   at ApexSQL.VSC.Core.Connections.Connect(ConnectionInfo connectionInfo) in E:\Agent\_work\331\s\Projects\ApexSQL.VSC.Common\Classes\Connections.cs:line 127
+
+2021-02-04 11:48:19.127 5702  -1     ERROR [VSCPWRTOOLS: 2020.7.51.0]: An exception occurred
+Connection refused
+Type: System.Net.Sockets.SocketException
+	Stack trace
+	   at Renci.SshNet.Abstractions.SocketAbstraction.Connect(IPEndPoint remoteEndpoint, TimeSpan connectTimeout)
+	   at Renci.SshNet.Session.SocketConnect(String host, Int32 port)
+	   at Renci.SshNet.Session.Connect()
+	   at Renci.SshNet.BaseClient.Connect()
+	   at ApexSQL.VSC.Core.MySqlServerConnection.ConnectToSSH() in E:\Agent\_work\331\s\Projects\ApexSQL.VSC.Common\Classes\MySqlServerConnection.cs:line 253
+	   at ApexSQL.VSC.Core.MySqlServerConnection..ctor(ConnectionInfo connectionInfo, String database) in E:\Agent\_work\331\s\Projects\ApexSQL.VSC.Common\Classes\MySqlServerConnection.cs:line 40
+	   at ApexSQL.VSC.Core.ServerConnection.CreateInstance(ConnectionInfo connectionInfo, String database) in E:\Agent\_work\331\s\Projects\ApexSQL.VSC.Common\Classes\ServerConnection.cs:line 35
+	   at ApexSQL.VSC.Core.Connections.Connect(ConnectionInfo connectionInfo) in E:\Agent\_work\331\s\Projects\ApexSQL.VSC.Common\Classes\Connections.cs:line 127
+
+2021-02-04 11:48:19.747 5702  -1     ERROR [VSCPWRTOOLS: 2020.7.51.0]: An exception occurred
+Connection refused
+Type: System.Net.Sockets.SocketException
+	Stack trace
+	   at Renci.SshNet.Abstractions.SocketAbstraction.Connect(IPEndPoint remoteEndpoint, TimeSpan connectTimeout)
+	   at Renci.SshNet.Session.SocketConnect(String host, Int32 port)
+	   at Renci.SshNet.Session.Connect()
+	   at Renci.SshNet.BaseClient.Connect()
+	   at ApexSQL.VSC.Core.MySqlServerConnection.ConnectToSSH() in E:\Agent\_work\331\s\Projects\ApexSQL.VSC.Common\Classes\MySqlServerConnection.cs:line 253
+	   at ApexSQL.VSC.Core.MySqlServerConnection..ctor(ConnectionInfo connectionInfo, String database) in E:\Agent\_work\331\s\Projects\ApexSQL.VSC.Common\Classes\MySqlServerConnection.cs:line 40
+	   at ApexSQL.VSC.Core.ServerConnection.CreateInstance(ConnectionInfo connectionInfo, String database) in E:\Agent\_work\331\s\Projects\ApexSQL.VSC.Common\Classes\ServerConnection.cs:line 35
+	   at ApexSQL.VSC.Core.Connections.Connect(ConnectionInfo connectionInfo) in E:\Agent\_work\331\s\Projects\ApexSQL.VSC.Common\Classes\Connections.cs:line 127
+
+2021-02-04 11:48:19.912 5702  -1     ERROR [VSCPWRTOOLS: 2020.7.51.0]: An exception occurred
+Connection refused
+Type: System.Net.Sockets.SocketException
+	Stack trace
+	   at Renci.SshNet.Abstractions.SocketAbstraction.Connect(IPEndPoint remoteEndpoint, TimeSpan connectTimeout)
+	   at Renci.SshNet.Session.SocketConnect(String host, Int32 port)
+	   at Renci.SshNet.Session.Connect()
+	   at Renci.SshNet.BaseClient.Connect()
+	   at ApexSQL.VSC.Core.MySqlServerConnection.ConnectToSSH() in E:\Agent\_work\331\s\Projects\ApexSQL.VSC.Common\Classes\MySqlServerConnection.cs:line 253
+	   at ApexSQL.VSC.Core.MySqlServerConnection..ctor(ConnectionInfo connectionInfo, String database) in E:\Agent\_work\331\s\Projects\ApexSQL.VSC.Common\Classes\MySqlServerConnection.cs:line 40
+	   at ApexSQL.VSC.Core.ServerConnection.CreateInstance(ConnectionInfo connectionInfo, String database) in E:\Agent\_work\331\s\Projects\ApexSQL.VSC.Common\Classes\ServerConnection.cs:line 35
+	   at ApexSQL.VSC.Core.Connections.Connect(ConnectionInfo connectionInfo) in E:\Agent\_work\331\s\Projects\ApexSQL.VSC.Common\Classes\Connections.cs:line 127
+
+2021-02-04 11:48:25.454 5702  -1     ERROR [VSCPWRTOOLS: 2020.7.51.0]: An exception occurred
+username
+Type: System.ArgumentException
+	Stack trace
+	   at Renci.SshNet.AuthenticationMethod..ctor(String username)
+	   at Renci.SshNet.PasswordAuthenticationMethod..ctor(String username, Byte[] password)
+	   at Renci.SshNet.PasswordAuthenticationMethod..ctor(String username, String password)
+	   at ApexSQL.VSC.Core.MySqlServerConnection.ConnectToSSH() in E:\Agent\_work\331\s\Projects\ApexSQL.VSC.Common\Classes\MySqlServerConnection.cs:line 238
+
+2021-02-04 11:48:25.456 5702  -1     ERROR [VSCPWRTOOLS: 2020.7.51.0]: An exception occurred
+username
+Type: System.ArgumentException
+	Stack trace
+	   at Renci.SshNet.AuthenticationMethod..ctor(String username)
+	   at Renci.SshNet.PasswordAuthenticationMethod..ctor(String username, Byte[] password)
+	   at Renci.SshNet.PasswordAuthenticationMethod..ctor(String username, String password)
+	   at ApexSQL.VSC.Core.MySqlServerConnection.ConnectToSSH() in E:\Agent\_work\331\s\Projects\ApexSQL.VSC.Common\Classes\MySqlServerConnection.cs:line 238
+	   at ApexSQL.VSC.Core.MySqlServerConnection..ctor(ConnectionInfo connectionInfo, String database) in E:\Agent\_work\331\s\Projects\ApexSQL.VSC.Common\Classes\MySqlServerConnection.cs:line 40
+	   at ApexSQL.VSC.Core.ServerConnection.CreateInstance(ConnectionInfo connectionInfo, String database) in E:\Agent\_work\331\s\Projects\ApexSQL.VSC.Common\Classes\ServerConnection.cs:line 35
+	   at ApexSQL.VSC.Core.Connections.Connect(ConnectionInfo connectionInfo) in E:\Agent\_work\331\s\Projects\ApexSQL.VSC.Common\Classes\Connections.cs:line 127
+
+2021-02-04 11:48:26.379 5702  -1     ERROR [VSCPWRTOOLS: 2020.7.51.0]: An exception occurred
+username
+Type: System.ArgumentException
+	Stack trace
+	   at Renci.SshNet.AuthenticationMethod..ctor(String username)
+	   at Renci.SshNet.PasswordAuthenticationMethod..ctor(String username, Byte[] password)
+	   at Renci.SshNet.PasswordAuthenticationMethod..ctor(String username, String password)
+	   at ApexSQL.VSC.Core.MySqlServerConnection.ConnectToSSH() in E:\Agent\_work\331\s\Projects\ApexSQL.VSC.Common\Classes\MySqlServerConnection.cs:line 238
+
+2021-02-04 11:48:26.383 5702  -1     ERROR [VSCPWRTOOLS: 2020.7.51.0]: An exception occurred
+username
+Type: System.ArgumentException
+	Stack trace
+	   at Renci.SshNet.AuthenticationMethod..ctor(String username)
+	   at Renci.SshNet.PasswordAuthenticationMethod..ctor(String username, Byte[] password)
+	   at Renci.SshNet.PasswordAuthenticationMethod..ctor(String username, String password)
+	   at ApexSQL.VSC.Core.MySqlServerConnection.ConnectToSSH() in E:\Agent\_work\331\s\Projects\ApexSQL.VSC.Common\Classes\MySqlServerConnection.cs:line 238
+	   at ApexSQL.VSC.Core.MySqlServerConnection..ctor(ConnectionInfo connectionInfo, String database) in E:\Agent\_work\331\s\Projects\ApexSQL.VSC.Common\Classes\MySqlServerConnection.cs:line 40
+	   at ApexSQL.VSC.Core.ServerConnection.CreateInstance(ConnectionInfo connectionInfo, String database) in E:\Agent\_work\331\s\Projects\ApexSQL.VSC.Common\Classes\ServerConnection.cs:line 35
+	   at ApexSQL.VSC.Core.Connections.Connect(ConnectionInfo connectionInfo) in E:\Agent\_work\331\s\Projects\ApexSQL.VSC.Common\Classes\Connections.cs:line 127
+
+2021-02-04 11:48:36.629 5702  -1     ERROR [VSCPWRTOOLS: 2020.7.51.0]: An exception occurred
+Connection refused
+Type: System.Net.Sockets.SocketException
+	Stack trace
+	   at Renci.SshNet.Abstractions.SocketAbstraction.Connect(IPEndPoint remoteEndpoint, TimeSpan connectTimeout)
+	   at Renci.SshNet.Session.SocketConnect(String host, Int32 port)
+	   at Renci.SshNet.Session.Connect()
+	   at Renci.SshNet.BaseClient.Connect()
+	   at ApexSQL.VSC.Core.MySqlServerConnection.ConnectToSSH() in E:\Agent\_work\331\s\Projects\ApexSQL.VSC.Common\Classes\MySqlServerConnection.cs:line 253
+	   at ApexSQL.VSC.Core.MySqlServerConnection..ctor(ConnectionInfo connectionInfo, String database) in E:\Agent\_work\331\s\Projects\ApexSQL.VSC.Common\Classes\MySqlServerConnection.cs:line 40
+	   at ApexSQL.VSC.Core.ServerConnection.CreateInstance(ConnectionInfo connectionInfo, String database) in E:\Agent\_work\331\s\Projects\ApexSQL.VSC.Common\Classes\ServerConnection.cs:line 35
+	   at ApexSQL.VSC.Core.Connections.Connect(ConnectionInfo connectionInfo) in E:\Agent\_work\331\s\Projects\ApexSQL.VSC.Common\Classes\Connections.cs:line 127
+
+2021-02-04 11:48:37.482 5702  -1     ERROR [VSCPWRTOOLS: 2020.7.51.0]: An exception occurred
+Connection refused
+Type: System.Net.Sockets.SocketException
+	Stack trace
+	   at Renci.SshNet.Abstractions.SocketAbstraction.Connect(IPEndPoint remoteEndpoint, TimeSpan connectTimeout)
+	   at Renci.SshNet.Session.SocketConnect(String host, Int32 port)
+	   at Renci.SshNet.Session.Connect()
+	   at Renci.SshNet.BaseClient.Connect()
+	   at ApexSQL.VSC.Core.MySqlServerConnection.ConnectToSSH() in E:\Agent\_work\331\s\Projects\ApexSQL.VSC.Common\Classes\MySqlServerConnection.cs:line 253
+	   at ApexSQL.VSC.Core.MySqlServerConnection..ctor(ConnectionInfo connectionInfo, String database) in E:\Agent\_work\331\s\Projects\ApexSQL.VSC.Common\Classes\MySqlServerConnection.cs:line 40
+	   at ApexSQL.VSC.Core.ServerConnection.CreateInstance(ConnectionInfo connectionInfo, String database) in E:\Agent\_work\331\s\Projects\ApexSQL.VSC.Common\Classes\ServerConnection.cs:line 35
+	   at ApexSQL.VSC.Core.Connections.Connect(ConnectionInfo connectionInfo) in E:\Agent\_work\331\s\Projects\ApexSQL.VSC.Common\Classes\Connections.cs:line 127
+
+2021-02-04 11:48:52.140 5702  -1     ERROR [VSCPWRTOOLS: 2020.7.51.0]: An exception occurred
+Connection refused
+Type: System.Net.Sockets.SocketException
+	Stack trace
+	   at Renci.SshNet.Abstractions.SocketAbstraction.Connect(IPEndPoint remoteEndpoint, TimeSpan connectTimeout)
+	   at Renci.SshNet.Session.SocketConnect(String host, Int32 port)
+	   at Renci.SshNet.Session.Connect()
+	   at Renci.SshNet.BaseClient.Connect()
+	   at ApexSQL.VSC.Core.MySqlServerConnection.ConnectToSSH() in E:\Agent\_work\331\s\Projects\ApexSQL.VSC.Common\Classes\MySqlServerConnection.cs:line 253
+	   at ApexSQL.VSC.Core.MySqlServerConnection..ctor(ConnectionInfo connectionInfo, String database) in E:\Agent\_work\331\s\Projects\ApexSQL.VSC.Common\Classes\MySqlServerConnection.cs:line 40
+	   at ApexSQL.VSC.Core.ServerConnection.CreateInstance(ConnectionInfo connectionInfo, String database) in E:\Agent\_work\331\s\Projects\ApexSQL.VSC.Common\Classes\ServerConnection.cs:line 35
+	   at ApexSQL.VSC.Core.Connections.Connect(ConnectionInfo connectionInfo) in E:\Agent\_work\331\s\Projects\ApexSQL.VSC.Common\Classes\Connections.cs:line 127
+
+2021-02-04 11:49:10.508 5702  -1     ERROR [VSCPWRTOOLS: 2020.7.51.0]: An exception occurred
+Connection refused
+Type: System.Net.Sockets.SocketException
+	Stack trace
+	   at Renci.SshNet.Abstractions.SocketAbstraction.Connect(IPEndPoint remoteEndpoint, TimeSpan connectTimeout)
+	   at Renci.SshNet.Session.SocketConnect(String host, Int32 port)
+	   at Renci.SshNet.Session.Connect()
+	   at Renci.SshNet.BaseClient.Connect()
+	   at ApexSQL.VSC.Core.MySqlServerConnection.ConnectToSSH() in E:\Agent\_work\331\s\Projects\ApexSQL.VSC.Common\Classes\MySqlServerConnection.cs:line 253
+	   at ApexSQL.VSC.Core.MySqlServerConnection..ctor(ConnectionInfo connectionInfo, String database) in E:\Agent\_work\331\s\Projects\ApexSQL.VSC.Common\Classes\MySqlServerConnection.cs:line 40
+	   at ApexSQL.VSC.Core.ServerConnection.CreateInstance(ConnectionInfo connectionInfo, String database) in E:\Agent\_work\331\s\Projects\ApexSQL.VSC.Common\Classes\ServerConnection.cs:line 35
+	   at ApexSQL.VSC.Core.Connections.Connect(ConnectionInfo connectionInfo) in E:\Agent\_work\331\s\Projects\ApexSQL.VSC.Common\Classes\Connections.cs:line 127
+
+2021-02-04 11:51:01.653 5702  -1     ERROR [VSCPWRTOOLS: 2020.7.51.0]: An exception occurred
+Unable to connect to any of the specified MySQL hosts.
+Type: MySqlConnector.MySqlException
+	Stack trace
+	   at MySqlConnector.Core.ServerSession.ConnectAsync(ConnectionSettings cs, Int32 startTickCount, ILoadBalancer loadBalancer, IOBehavior ioBehavior, CancellationToken cancellationToken) in /_/src/MySqlConnector/Core/ServerSession.cs:line 474
+	   at MySqlConnector.Core.ConnectionPool.GetSessionAsync(MySqlConnection connection, Int32 startTickCount, IOBehavior ioBehavior, CancellationToken cancellationToken) in /_/src/MySqlConnector/Core/ConnectionPool.cs:line 111
+	   at MySqlConnector.Core.ConnectionPool.GetSessionAsync(MySqlConnection connection, Int32 startTickCount, IOBehavior ioBehavior, CancellationToken cancellationToken) in /_/src/MySqlConnector/Core/ConnectionPool.cs:line 140
+	   at MySqlConnector.MySqlConnection.CreateSessionAsync(ConnectionPool pool, Int32 startTickCount, Nullable`1 ioBehavior, CancellationToken cancellationToken) in /_/src/MySqlConnector/MySqlConnection.cs:line 821
+	   at MySqlConnector.MySqlConnection.OpenAsync(Nullable`1 ioBehavior, CancellationToken cancellationToken) in /_/src/MySqlConnector/MySqlConnection.cs:line 399
+	   at MySqlConnector.MySqlConnection.Open() in /_/src/MySqlConnector/MySqlConnection.cs:line 365
+	   at ApexSQL.VSC.Core.MySqlServerConnection.Open() in E:\Agent\_work\331\s\Projects\ApexSQL.VSC.Common\Classes\MySqlServerConnection.cs:line 210
+	   at ApexSQL.VSC.Core.Connections.Connect(ConnectionInfo connectionInfo) in E:\Agent\_work\331\s\Projects\ApexSQL.VSC.Common\Classes\Connections.cs:line 130
+
+2021-02-04 11:51:02.688 5702  -1     ERROR [VSCPWRTOOLS: 2020.7.51.0]: An exception occurred
+Unable to connect to any of the specified MySQL hosts.
+Type: MySqlConnector.MySqlException
+	Stack trace
+	   at MySqlConnector.Core.ServerSession.ConnectAsync(ConnectionSettings cs, Int32 startTickCount, ILoadBalancer loadBalancer, IOBehavior ioBehavior, CancellationToken cancellationToken) in /_/src/MySqlConnector/Core/ServerSession.cs:line 474
+	   at MySqlConnector.Core.ConnectionPool.GetSessionAsync(MySqlConnection connection, Int32 startTickCount, IOBehavior ioBehavior, CancellationToken cancellationToken) in /_/src/MySqlConnector/Core/ConnectionPool.cs:line 111
+	   at MySqlConnector.Core.ConnectionPool.GetSessionAsync(MySqlConnection connection, Int32 startTickCount, IOBehavior ioBehavior, CancellationToken cancellationToken) in /_/src/MySqlConnector/Core/ConnectionPool.cs:line 140
+	   at MySqlConnector.MySqlConnection.CreateSessionAsync(ConnectionPool pool, Int32 startTickCount, Nullable`1 ioBehavior, CancellationToken cancellationToken) in /_/src/MySqlConnector/MySqlConnection.cs:line 821
+	   at MySqlConnector.MySqlConnection.OpenAsync(Nullable`1 ioBehavior, CancellationToken cancellationToken) in /_/src/MySqlConnector/MySqlConnection.cs:line 399
+	   at MySqlConnector.MySqlConnection.Open() in /_/src/MySqlConnector/MySqlConnection.cs:line 365
+	   at ApexSQL.VSC.Core.MySqlServerConnection.Open() in E:\Agent\_work\331\s\Projects\ApexSQL.VSC.Common\Classes\MySqlServerConnection.cs:line 210
+	   at ApexSQL.VSC.Core.Connections.Connect(ConnectionInfo connectionInfo) in E:\Agent\_work\331\s\Projects\ApexSQL.VSC.Common\Classes\Connections.cs:line 130
+
+2021-02-05 08:34:07.705 11740 -1     INFO  [VSCPWRTOOLS: 2020.7.51.0]: OS version: Darwin 19.6.0 Darwin Kernel Version 19.6.0: Tue Nov 10 00:10:30 PST 2020; root:xnu-6153.141.10~1/RELEASE_X86_64
+2021-02-05 08:34:07.713 11740 -1     INFO  [VSCPWRTOOLS: 2020.7.51.0]: Host application: Visual Studio Code(1.52.1)
+2021-02-05 08:34:07.715 11740 -1     INFO  [VSCPWRTOOLS: 2020.7.51.0]: Initializing addin: ApexSQL Database Power Tools for VS Code 2020.7.51.0
+2021-02-05 09:35:04.303 11740 -1     ERROR [VSCPWRTOOLS: 2020.7.51.0]: An exception occurred
+Operation canceled
+Type: System.Net.Sockets.SocketException
+	Stack trace
+	   at MySqlConnector.Protocol.Serialization.SocketByteHandler.WriteBytesAsync(ReadOnlyMemory`1 data, IOBehavior ioBehavior) in /_/src/MySqlConnector/Protocol/Serialization/SocketByteHandler.cs:line 122
+	--- End of stack trace from previous location where exception was thrown ---
+	   at MySqlConnector.Protocol.Serialization.ProtocolUtility.<WritePacketAsync>g__WritePacketAsyncAwaited|8_0(ValueTask`1 task_, Byte[] buffer_) in /_/src/MySqlConnector/Protocol/Serialization/ProtocolUtility.cs:line 549
+	   at MySqlConnector.Core.ServerSession.SendReplyAsyncAwaited(ValueTask`1 task) in /_/src/MySqlConnector/Core/ServerSession.cs:line 834
+	   at MySqlConnector.Core.CommandExecutor.ExecuteReaderAsync(IReadOnlyList`1 commands, ICommandPayloadCreator payloadCreator, CommandBehavior behavior, IOBehavior ioBehavior, CancellationToken cancellationToken) in /_/src/MySqlConnector/Core/CommandExecutor.cs:line 60
+	   at MySqlConnector.MySqlCommand.ExecuteReader() in /_/src/MySqlConnector/MySqlCommand.cs:line 105
+	   at ApexSQL.VSC.Core.MySqlServerConnection.<>c__DisplayClass9_0.<ExecuteQuery>b__0(String statement) in E:\Agent\_work\331\s\Projects\ApexSQL.VSC.Common\Classes\MySqlServerConnection.cs:line 69
+	   at System.Collections.Generic.List`1.ForEach(Action`1 action)
+	   at ApexSQL.VSC.Core.MySqlServerConnection.ExecuteQuery(String query) in E:\Agent\_work\331\s\Projects\ApexSQL.VSC.Common\Classes\MySqlServerConnection.cs:line 144
+
+2021-02-07 20:28:18.551 654   -1     INFO  [VSCPWRTOOLS: 2020.7.51.0]: OS version: Darwin 19.6.0 Darwin Kernel Version 19.6.0: Tue Nov 10 00:10:30 PST 2020; root:xnu-6153.141.10~1/RELEASE_X86_64
+2021-02-07 20:28:18.555 654   -1     INFO  [VSCPWRTOOLS: 2020.7.51.0]: Host application: Visual Studio Code(1.52.1)
+2021-02-07 20:28:18.557 654   -1     INFO  [VSCPWRTOOLS: 2020.7.51.0]: Initializing addin: ApexSQL Database Power Tools for VS Code 2020.7.51.0

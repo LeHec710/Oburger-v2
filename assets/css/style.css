@@ -1,0 +1,440 @@
+
+/*********************
+    GENERALS
+*********************/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    /* colors */
+    --green: #52963B;
+    --white: #fefefe;
+    --light-green: #C9CE9E;
+    --black: #0F0B02;
+    min-height: 100vh;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    color: var(--black);
+    background-color: var(--white);
+    pointer-events: none;
+    overflow: hidden;
+}
+
+ul {
+    list-style: none;
+    list-style-type: none;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+input:not([type="submit"]) {
+    padding: 0.5rem 1rem;
+    outline: none;
+    border-radius: 3px;
+    font-family: inherit;
+    border: 1px solid var(--black);
+    transition: all 0.3s ease;
+}
+input:not([type="submit"]):hover, form input:not([type="submit"]):focus {
+    border: 1px solid var(--green);
+}
+
+input[type="submit"], button {
+    padding: 0.5rem 1rem;
+    background-color: transparent;
+    border: 1px solid var(--green);
+    color: var(--green);
+    border-radius: 3px;
+    text-transform: uppercase;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+input[type="submit"].green, button.green {
+    border: 1px solid var(--white);
+    color: var(--white);
+}
+input[type="submit"].green:hover, button.green:hover {
+    background-color: var(--white);
+    color: var(--black);
+}
+input[type="submit"]:hover, button:hover {
+    background-color: var(--green);
+    color: var(--white);
+}
+
+/*********************
+    HEADER
+*********************/
+header {
+    width: 100%;
+    height: 100px;
+    pointer-events: all;
+}
+
+header nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 10;
+    height: 100%;
+    width: 100%;
+}
+
+header nav .logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    padding: 0 1.5rem;
+    background: var(--white);
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+header nav ul {
+    margin-right: 2rem;
+}
+
+header nav ul li {
+    display: inline-block;
+    padding: 0 1rem;
+    color: var(--green);
+    font-weight: 600;
+    text-transform: uppercase;
+    transition: all 0.3s ease;
+}
+
+header nav ul li.selected, header nav ul li:hover {
+    color: var(--black);
+}
+
+/*********************
+    CONTENT
+*********************/
+
+.content-container {
+    height: calc(100vh - 100px);
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    pointer-events: none;
+}
+
+/* left part */
+.content-container .content-left {
+    position: relative;
+    width: 40vw;
+    height: 100vh;
+    margin-top: -100px;
+    padding: 1rem;
+    padding-top: calc(100px + 1rem);
+    background-color: var(--green);
+    color: var(--white);
+    z-index: -1;
+    pointer-events: all;
+}
+
+.content-container .content-left.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 4vw;
+    text-align: center;
+}
+
+.content-container .content-left .bar {
+    width: 50px;
+    height: calc(100vh - 200px);
+    position: absolute;
+    right: -50px; top: 50%;
+    transform: translateY(-50%);
+    background-color: var(--green);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.content-container .content-left .bar .line {
+    position: relative;
+    width: 2px;
+    height: 80%;
+    background-color: var(--white);
+}
+
+.content-container .content-left .bar .line .point {
+    position: absolute;
+    top: 0; left: 1px;
+    width: 12px;
+    height: 12px;
+    border-radius: 15px;
+    transform: translate(-50%);
+    background-color: var(--white);
+    transition: all 0.5s ease-in-out;
+}
+
+.content-container .content-left h1 {
+    font-weight: 300;
+    text-transform: uppercase;
+}
+
+.content-container .content-left .burger-container {
+    width: 100%;
+    height: 300px;
+    overflow: hidden;
+    padding-top: 50px;
+    padding-left: 4rem;
+    padding-right: 4rem;
+    text-align: center;
+    position: relative;
+}
+
+.content-container .content-left .burger-container .burger {
+    min-height: 300px;
+    overflow: hidden;
+    top: -300px;
+    transition: all 0.5s ease-in-out;
+}
+
+.content-container .content-left .burger-container .burger.hidden {
+    transition: all 0.2s ease;
+    height: 0;
+    opacity: 0;
+}
+
+.content-container .content-left .burger h3 {
+    padding: 1rem 0;
+    font-weight: 300;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.content-container .content-left .burger .description {
+    color: var(--light-green);
+}
+
+.content-container .content-left .burger .price {
+    color: var(--white);
+    padding: 0.8rem 0;
+}
+
+.content-container .content-left .burger button {
+    padding: 0.6rem 0.9rem;
+    border: 1px solid var(--white);
+    border-radius: 2px;
+    outline: none;
+    color: var(--white);
+    background: transparent;
+    text-transform: uppercase;
+    font-family: inherit;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.content-container .content-left .burger button:hover {
+    background: var(--white);
+    color: var(--black);
+}
+
+.content-container .content-left .medias {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+}
+
+.content-container .content-left .medias ul {
+    height: 100px;
+    padding: 0 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+/* right part */
+.content-container .content-right {
+    width: 60vw;
+    height: 100vh;
+    position: relative;
+    margin-top: -100px;
+    pointer-events: none;
+}
+
+.content-container .content-right.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 0 6vw;
+}
+
+.content-container .content-right .img-container {
+    position: relative;
+    width: calc(60vw - 50px);
+    margin-left: 50px;
+    overflow: hidden;
+    display: flex;
+}   
+
+.content-container .content-right .img-container .img {
+    min-width: 100%;
+    text-align: center;
+    transition: all 0.5s ease-in-out;
+}
+
+.content-container .content-right .img-container .img img {
+    width: 450px;
+    object-fit: cover;
+}
+
+.content-container .content-right .selectors {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    pointer-events: all;
+}
+
+.content-container .content-right .selectors div:not(.separator) {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    height: 100px;
+    width: 150px;
+    background-color: var(--black);
+    color: var(--light-green);
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+.content-container .content-right .selectors div:not(.separator):hover {
+    color: var(--white);
+}
+
+.content-container .content-right .selectors .separator {
+    width: 1px;
+    height: 60px;
+    position: absolute;
+    left: 50%;
+    background: var(--light-green);
+    z-index: 1;
+}
+
+.content-container .content-left h3 {
+    font-weight: 300;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+.content-container .content-left p {
+    margin: 1rem 0;
+    color: var(--light-green);
+}
+
+.content-container .content-right h1 {
+    padding: 0.7rem 0;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.content-container .content-right p {
+    text-align: center;
+    width: 70%;
+    margin-bottom: 1.2rem;
+} 
+
+.content-container .content-right form {
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    pointer-events: all;
+}
+
+.content-container .content-right form .input input {
+    width: 100%;
+}
+
+/*********************
+    INSCRIPTION
+*********************/
+
+.inscription .content-right form .name {
+    display: flex;
+    justify-content: space-between;
+}
+
+.inscription .content-right form .name input#firstname {
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
+.inscription .content-right form .name input#lastname {
+    border-left-width: 0;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+}
+
+.inscription .content-right form .name div {
+    width: 50%;
+}
+
+
+/*********************
+    COMMANDER
+*********************/
+
+.cart-container {
+    width: 80%;
+    text-align: center;
+    pointer-events: all;
+}
+
+.cart-container ul {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    text-align: center;
+}
+
+.cart-container ul li {
+    width: 25%;
+}
+
+.cart-container img {
+    width: 60px;
+    object-fit: cover;
+}
+
+.cart-container input[type="number"] {
+    width: 80px;
+}
+
+.bill-container {
+    width: 80%;
+    pointer-events: all;
+    text-align: center;
+}
+
+.bill-container ul {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+.bill-container ul li {
+    width: 33%;
+}
+
+.bill-container hr {
+    border: none;
+    border-top: 1px solid var(--white);
+}
